@@ -1,9 +1,6 @@
-var React = require('react');
-var ReactDOM = require('react-dom');
-
-function Heading(){ // component functions are conventionally named with Pascal Case
-    return <h1>Hello, I am Sajal!</h1>
-}
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Heading from './Heading'
 
 ReactDOM.render(
     <div>
