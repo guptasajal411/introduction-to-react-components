@@ -1,12 +1,17 @@
 import React from 'react';
+import "./card.css"
 
-function Card(props){
-    return(
-        <div>
-            <img src="https://picsum.photos/300" />
-            <h4>{props.name}</h4>
-            <p>{props.description}</p>
-            <hr />
+function Card(props) {
+    return (
+        <div className="card">
+            <div className="top">
+                <h2 className="name">{props.name}</h2>
+                <img className="circle-img" src={props.imgURL} alt="avatar_img" />
+            </div>
+            <div className="bottom">
+                <p className="info">{props.phone}</p>
+                <p className="info">{props.email}</p>
+            </div>
         </div>
     );
 }
