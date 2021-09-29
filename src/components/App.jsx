@@ -1,9 +1,10 @@
 import React from 'react';
-import contacts from './contacts'
+import contacts from '../contacts'
 import Heading from './Heading';
 import Time from './Time';
 import List from './List';
 import Card from './Card';
+import "./styles.css"
 
 function App(){
     return(
