@@ -2,6 +2,7 @@ import React from 'react';
 import Heading from './Heading';
 import Time from './Time';
 import List from './List';
+import Card from './Card';
 
 function App(){
     return(
@@ -9,6 +10,7 @@ function App(){
             <Heading />
             <Time />
             <List />
+            <Card />
         </div>
     );
 }
