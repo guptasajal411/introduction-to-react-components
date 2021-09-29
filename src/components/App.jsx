@@ -10,7 +10,10 @@ function App(){
             <Heading />
             <Time />
             <List />
-            <Card />
+            <Card name="Aditya" description="Adityas description" />
+            <Card name="Akshat" description="Akshats description" />
+            <Card name="Gaurav" description="Gaurav's description" />
+            <Card name="Arpit" description="Arpits description" />
         </div>
     );
 }
