@@ -4,6 +4,7 @@ import Avatar from './Avatar'
 function createCard(contact){
     return(
         <Card
+            key={contact.name}
             name={contact.name}
             imgURL={contact.imgURL}
             phone={contact.phone}

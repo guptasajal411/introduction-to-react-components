@@ -136,3 +136,17 @@ code{
     font-family: 'Source Code Pro', monospace;
     font-size: 0.5rem;
 }
+
+hr{
+    border-style: solid;
+    background: black;
+    border-width: 0.5px;
+}
+
+button{
+    padding: 0.5rem 3rem;
+    background-color: #2ec2b0;
+    color: white;
+    font-weight: bold;
+    border: 0;
+}

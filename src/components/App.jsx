@@ -11,6 +11,7 @@ import Register from './Register';
 import Counter from './Counter';
 import TimeHook from './TimeHook'
 import AutoTimeHook from './AutoTimeHook'
+import Form from './Form'
 import "./styles.css"
 
 var isRegistered = true;
@@ -37,6 +38,8 @@ function App(){
             <TimeHook />
             <hr />
             <AutoTimeHook />
+            <hr />
+            <Form />
             <hr />
         </div>
     );
