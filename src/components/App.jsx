@@ -10,6 +10,7 @@ import Login from './Login';
 import Register from './Register';
 import Counter from './Counter';
 import TimeHook from './TimeHook'
+import AutoTimeHook from './AutoTimeHook'
 import "./styles.css"
 
 var isRegistered = true;
@@ -18,14 +19,25 @@ function App(){
     return(
         <div>
             <Avatar imgURL="https://github.com/guptasajal411.png" />
+            <hr />
             <Heading />
+            <hr />
             <Time />
+            <hr />
             <List />
+            <hr />
             {contacts.map(createCard)}
+            <hr />
             <Emojipedia />
+            <hr />
             { isRegistered ? <Login /> : <Register /> }
+            <hr />
             <Counter />
+            <hr />
             <TimeHook />
+            <hr />
+            <AutoTimeHook />
+            <hr />
         </div>
     );
 }
