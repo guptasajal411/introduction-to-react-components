@@ -7,17 +7,9 @@ import {createCard} from './Card';
 import contacts from '../contacts'
 import Emojipedia from './Emojipedia';
 import Login from './Login';
-
 import "./styles.css"
 
-var condition = true;
-function renderConditionally(){
-    if (condition) {
-        return(<p>You are logged in!</p>);
-    } else {
-        return(<Login />);
-    }
-}
+var condition = false;
 
 function App(){
     return(
@@ -28,7 +20,7 @@ function App(){
             <List />
             {contacts.map(createCard)}
             <Emojipedia />
-            {renderConditionally()}
+            { condition === true ? <p>You are logged in!</p> : <Login /> }
         </div>
     );
 }
