@@ -9,6 +9,7 @@ import Emojipedia from './Emojipedia';
 import Login from './Login';
 import Register from './Register';
 import Counter from './Counter';
+import TimeHook from './TimeHook'
 import "./styles.css"
 
 var isRegistered = true;
@@ -24,6 +25,7 @@ function App(){
             <Emojipedia />
             { isRegistered ? <Login /> : <Register /> }
             <Counter />
+            <TimeHook />
         </div>
     );
 }
