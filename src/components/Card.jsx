@@ -1,6 +1,17 @@
 import React from 'react';
 import Avatar from './Avatar'
 
+function createCard(contact){
+    return(
+        <Card
+            name={contact.name}
+            imgURL={contact.imgURL}
+            phone={contact.phone}
+            email={contact.email}
+        />
+    );
+}
+
 function Card(props) {
     return (
         <div className="card">
@@ -17,3 +28,4 @@ function Card(props) {
 }
 
 export default Card;
+export {createCard};

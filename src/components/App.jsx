@@ -1,22 +1,12 @@
 import React from 'react';
-import contacts from '../contacts'
+import Avatar from './Avatar';
 import Heading from './Heading';
 import Time from './Time';
 import List from './List';
-import Card from './Card';
-import Avatar from './Avatar';
+import Card, {createCard} from './Card';
+import contacts from '../contacts'
+import Emojipedia from './Emojipedia';
 import "./styles.css"
-
-function createCard(contact){
-    return(
-        <Card
-            name={contact.name}
-            imgURL={contact.imgURL}
-            phone={contact.phone}
-            email={contact.email}
-        />
-    );
-}
 
 function App(){
     return(
