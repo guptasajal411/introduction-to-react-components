@@ -7,9 +7,10 @@ import {createCard} from './Card';
 import contacts from '../contacts'
 import Emojipedia from './Emojipedia';
 import Login from './Login';
+import Register from './Register';
 import "./styles.css"
 
-var condition = false;
+var isRegistered = true;
 
 function App(){
     return(
@@ -20,7 +21,7 @@ function App(){
             <List />
             {contacts.map(createCard)}
             <Emojipedia />
-            { condition === true ? <p>You are logged in!</p> : <Login /> }
+            { isRegistered ? <Login /> : <Register /> }
         </div>
     );
 }
