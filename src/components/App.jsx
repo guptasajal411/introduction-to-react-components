@@ -8,6 +8,7 @@ import contacts from '../contacts'
 import Emojipedia from './Emojipedia';
 import Login from './Login';
 import Register from './Register';
+import Counter from './Counter';
 import "./styles.css"
 
 var isRegistered = true;
@@ -22,6 +23,7 @@ function App(){
             {contacts.map(createCard)}
             <Emojipedia />
             { isRegistered ? <Login /> : <Register /> }
+            <Counter />
         </div>
     );
 }
